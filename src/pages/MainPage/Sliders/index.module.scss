@@ -1,23 +1,103 @@
 @use '../../../mixins' as *;
 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.sliders_container, .yellow_slider, .green_slider, .first_slider, .container {
+  width: 79.628vw;
+  height: 21.234vw;
+}
+
 .sliders_container {
-  width: 75vw;
-  overflow: hidden;
+  overflow-x: auto;
+  border-radius: 1.5vw;
+  display: flex;
+  overflow-y: clip;
+}
+
+.yellow_slider, .green_slider, .first_slider {
+  @include flex-between;
+}
+
+.first_slider {
+  background: #B3EDC8;
+}
+
+.green_slider {
+  background: #BFF0DE;
 }
 
 .yellow_slider {
-  @include flex-between;
   background: #FFE48F;
+}
+
+.image {
+  width: 35.435vw;
+  margin-left: 3vw;
+}
+
+.image > img, {
+  height: 21.234vw;
 }
 
 .button {
   width: 10.25vw;
   background: #07C88E;
-  padding: 0.75vw 1.5vw;
+  padding: 0.75vw 1.5vw 0.75vw 1.5vw;
   text-decoration: none;
   color: white;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  border-radius: 0.5vw;
+  text-wrap: nowrap;
 }
 
 h1 {
   font-size: 48px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+
+.slider_info, .slider_info_second {
+  margin-top: 2.92vw;
+  margin-left: 4.247vw;
+  height: 13.802vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider_info {
+  width: 37vw;
+}
+
+.slider_info_second {
+  width: 39.947vw;
+}
+
+.container_for_scroll_buttons > button {
+  border-radius: 50%;
+  height: 2.75vw;
+  width: 2.75vw;
+  @include flex-center;
+  border: none;
+  box-shadow: 0 0 1vw #000B261F;
+}
+
+.container_for_scroll_buttons {
+  width: calc(79.628vw + 2.75vw);
+  @include flex-between;
+  position: absolute;
+  top: calc(50% - (2.75vw / 2));
+  left: calc(-2.75vw / 2);
+  z-index: 2;
+}
+
+.container {
+  position: relative;
 }
