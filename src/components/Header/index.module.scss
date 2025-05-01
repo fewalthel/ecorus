@@ -1,0 +1,14 @@
+@use '../../mixins' as *;
+
+.header, .nav {
+    @include flex-between;
+}
+
+.nav {
+    width: 23.438vw;
+}
+
+.header {
+    background: white;
+}
+

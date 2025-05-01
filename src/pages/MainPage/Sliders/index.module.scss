@@ -1,0 +1,23 @@
+@use '../../../mixins' as *;
+
+.sliders_container {
+  width: 75vw;
+  overflow: hidden;
+}
+
+.yellow_slider {
+  @include flex-between;
+  background: #FFE48F;
+}
+
+.button {
+  width: 10.25vw;
+  background: #07C88E;
+  padding: 0.75vw 1.5vw;
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+}
