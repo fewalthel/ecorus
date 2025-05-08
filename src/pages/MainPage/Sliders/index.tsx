@@ -17,10 +17,10 @@ export const Sliders = () => {
     return (
         <div className={styles.container}>
             <div className={styles.container_for_scroll_buttons}>
-                <button onClick={() => handleRef(-79.628)}>
+                <button onClick={() => handleRef(-75.05)}>
                     <img src='/icons/arrow-left.svg'/>
                 </button>
-                <button onClick={() => handleRef(79.628)}>
+                <button onClick={() => handleRef(75.05)}>
                     <img src='/icons/arrow-right.svg'/>
                 </button>
             </div>

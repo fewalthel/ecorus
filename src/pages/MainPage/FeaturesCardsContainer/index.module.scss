@@ -1,0 +1,7 @@
+@use '../../../../src/mixins' as *;
+
+.cardsContainer {
+  @include flex-between;
+  width: 75vw;
+  margin: 2.75vw 0;
+}

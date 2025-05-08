@@ -1,12 +1,10 @@
 import {Sliders} from "./Sliders";
-import './index.css'
+import {FeaturesCardsContainer} from "./FeaturesCardsContainer";
 
 
-export const MainPage = () => {
-    return <main>
-        main
-
+export const MainPage = () => (
+    <>
         <Sliders/>
-
-    </main>
-}
+        <FeaturesCardsContainer/>
+    </>
+)

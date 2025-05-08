@@ -1,0 +1,38 @@
+@use '../../mixins' as *;
+
+.header, .nav {
+  @include flex-between;
+}
+
+.ecorus_logo {
+  margin-left: 12.5vw;
+}
+
+.nav {
+  width: 23.188vw;
+}
+
+.header {
+  background: white;
+  position: fixed;
+  z-index: 4;
+  width: 100vw;
+  height: 5vw;
+  top: 0;
+  border-bottom: 0.063vw solid #1222581F;
+}
+
+.nav > a, .sign_in_button, .city {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000B26A3;
+}
+
+.sign_in_button {
+  margin-right: 12.5vw;
+}
+
+main {
+  position: relative;
+  margin-top: 7.5vw;
+}

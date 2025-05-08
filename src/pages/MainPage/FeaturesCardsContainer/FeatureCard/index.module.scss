@@ -1,0 +1,38 @@
+@use '../../../../mixins' as *;
+
+.buttonLink {
+  background: #3E507214;
+  border: none;
+  width: 3vw;
+  height: 3vw;
+  box-sizing: border-box;
+  padding: 0.328vw;
+  @include flex-center;
+}
+
+.featureCard {
+  width: 36.75vw;
+  height: 18.75vw;
+  border: 0.063vw solid #1222581F;
+  border-radius: 1vw;
+  position: relative;
+  padding: 2.5vw;
+  box-sizing: border-box;
+
+}
+
+.featureImage {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  bottom: 0;
+  width: 15.937vw;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.description {
+  width: 17.125vw;
+}

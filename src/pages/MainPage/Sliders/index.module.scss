@@ -6,7 +6,7 @@
 }
 
 .sliders_container, .yellow_slider, .green_slider, .first_slider, .container {
-  width: 79.628vw;
+  width: 75vw;
   height: 21.234vw;
 }
 
@@ -25,6 +25,10 @@
   background: #B3EDC8;
 }
 
+.first_slider > .image {
+  margin-right: 4.375vw;
+}
+
 .green_slider {
   background: #BFF0DE;
 }
@@ -35,7 +39,7 @@
 
 .image {
   width: 35.435vw;
-  margin-left: 3vw;
+  height: 21.234vw;
 }
 
 .image > img, {
@@ -45,7 +49,7 @@
 .button {
   width: 10.25vw;
   background: #07C88E;
-  padding: 0.75vw 1.5vw 0.75vw 1.5vw;
+  padding: 0.75vw 1.5vw;
   text-decoration: none;
   color: white;
   position: absolute;
@@ -53,6 +57,7 @@
   text-align: center;
   border-radius: 0.5vw;
   text-wrap: nowrap;
+  cursor: pointer;
 }
 
 h1 {
@@ -87,10 +92,12 @@ h2 {
   @include flex-center;
   border: none;
   box-shadow: 0 0 1vw #000B261F;
+  background: white;
+  cursor: pointer;
 }
 
 .container_for_scroll_buttons {
-  width: calc(79.628vw + 2.75vw);
+  width: calc(75vw + 2.75vw);
   @include flex-between;
   position: absolute;
   top: calc(50% - (2.75vw / 2));
