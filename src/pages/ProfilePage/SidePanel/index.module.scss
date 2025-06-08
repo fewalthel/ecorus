@@ -1,0 +1,41 @@
+.sidePanel {
+  width: 48vw;
+
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  gap: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+}
+
+.tabsContainer {
+  gap: 1.5vw;
+  display: flex;
+  margin-bottom: 1.5vw;
+  margin-left: 3vw;
+
+  button {
+    font-size: 1.2rem;
+  }
+}
+
+.tab, .tab_active {
+  border: none;
+  background: white;
+}
+
+.tab {
+  color: #000B26A3;
+}
+
+.tab_active {
+  color: #000B26;
+  text-decoration: underline var(--primary-color) 0.188vw;
+  text-underline-offset: 0.625vw;
+}

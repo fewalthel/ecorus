@@ -1,0 +1,14 @@
+@use '../../mixins' as *;
+
+.container {
+  @include flex-between;
+  align-items: flex-start;
+  width: 75vw;
+  margin-top: 2.5vw;
+}
+
+.containerPage {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+}

@@ -1,0 +1,27 @@
+@use '../../../mixins' as *;
+
+.productContainer {
+  width: 17.146vw;
+  border-radius: 1vw;
+
+  img {
+    width: 17.146vw;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0.5vw #152D671F;
+  }
+}
+
+.info {
+  height: 5.31vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .price {
+    img {
+      width: 1.5vw;
+    }
+  }
+}

@@ -1,18 +1,7 @@
 @use '../../mixins' as *;
 
-.header, .nav {
-  @include flex-between;
-}
-
-.ecorus_logo {
-  margin-left: 12.5vw;
-}
-
-.nav {
-  width: 23.188vw;
-}
-
 .header {
+  @include flex-between;
   background: white;
   position: fixed;
   z-index: 4;
@@ -20,19 +9,60 @@
   height: 5vw;
   top: 0;
   border-bottom: 0.063vw solid #1222581F;
+
+  .ecorus_logo {
+    margin-left: 12.5vw;
+    width: 5.875vw;
+  }
 }
 
-.nav > a, .sign_in_button, .city {
-  text-decoration: none;
-  font-size: 14px;
-  color: #000B26A3;
+.nav {
+  @include flex-between;
+  width: 23.188vw;
+  margin-left: -28vw;
 }
 
 .sign_in_button {
+  border: none;
+  background: none;
+  @include flex-between;
+  width: 4.375vw;
+  cursor: pointer;
+  color: #000B26CC;
+}
+
+.linksContainer {
+  width: 17.125vw;
+  @include flex-between;
   margin-right: 12.5vw;
 }
 
-main {
-  position: relative;
-  margin-top: 7.5vw;
+.active {
+  color: #000B26;
+  text-decoration: underline var(--primary-color) 0.188vw;
+  text-underline-offset: 2vw;
+}
+
+.default {
+  color: #000B26A3;
+  text-decoration: none;
+}
+
+.city {
+  width: 4.75vw;
+  @include flex-between;
+  color: #000B26CC;
+}
+
+a, select, option {
+  font-size: 0.8rem;
+  border: none;
+  background: none;
+  width: auto;
+}
+
+.avatar {
+  width: 1.88vw;
+  height: 1.88vw;
+  border-radius: 50%;
 }

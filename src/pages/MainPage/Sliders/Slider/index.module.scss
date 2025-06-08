@@ -1,0 +1,77 @@
+@use '../../../../mixins' as *;
+
+.button {
+  width: 10.25vw;
+  background: #07C88E;
+  padding: 0.75vw 1.5vw;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  border-radius: 0.5vw;
+  text-wrap: nowrap;
+  cursor: pointer;
+}
+
+.h1 {
+  font-size: 2.8rem;
+}
+
+.text_container {
+  gap: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 7.5vw;
+}
+
+.slider_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 37vw;
+  gap: 2.5vw;
+}
+
+.yellow_slider, .green_slider, .first_slider, .container {
+  width: 75vw;
+  height: 21.234vw;
+}
+
+.yellow_slider, .green_slider, .first_slider {
+  @include flex-between;
+}
+
+.first_slider {
+  background: #B3EDC8;
+}
+
+.first_slider > .image {
+  margin-right: 4.375vw;
+}
+
+.green_slider {
+  background: #BFF0DE;
+}
+
+.yellow_slider {
+  background: #FFE48F;
+}
+
+.image {
+  width: 35.435vw;
+  height: 21.234vw;
+}
+
+.image > img, {
+  height: 21.234vw;
+}
+
+.slider_info{
+  margin-top: 2vw;
+  margin-left: 4.247vw;
+  height: 13.802vw;
+  overflow: hidden;
+  position: relative;
+}

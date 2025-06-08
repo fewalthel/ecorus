@@ -1,0 +1,26 @@
+.controlPanel {
+  width: 17.625vw;
+  height: 33.875vw;
+  background-color: white;
+  border: 0.063vw solid #3E507229;
+  border-radius: 1vw;
+  padding: 1.5vw;
+
+
+  ul {
+    li {
+      list-style: none;
+
+      input {
+        accent-color: #07C88E;
+      }
+    }
+  }
+
+  .removeFilters__button {
+    border-radius: 0.5vw;
+    background-color: #3E507214;
+    padding: 0.75vw 1.5vw;
+    border: none;
+  }
+}

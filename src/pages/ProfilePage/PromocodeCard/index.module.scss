@@ -1,0 +1,27 @@
+@use '../../../mixins' as *;
+
+.promocodeCard {
+  width: 48vw;
+  height: 6.875vw;
+  @include flex-between;
+
+  .info {
+    gap: 0.75vw;
+    display: flex;
+    flex-direction: column;
+    height: 6vw;
+
+    a {
+      max-width: 90%;
+      color: var(--primary-color)
+    }
+  }
+
+  .showQRButton {
+    border: none;
+    padding: 0.625vw 1.25vw;
+    background-color: #3E507214;
+    border-radius: 0.5vw;
+    cursor: pointer;
+  }
+}

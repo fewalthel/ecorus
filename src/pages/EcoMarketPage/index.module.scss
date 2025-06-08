@@ -1,0 +1,19 @@
+@use '../../mixins' as *;
+
+.productsContainer {
+  width: 54.438vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5vw;
+}
+
+.topContainer {
+  @include flex-between;
+  width: 75vw;
+}
+
+.catalogContainer {
+  @include flex-between;
+  align-items: start;
+  margin-top: 2vw;
+}

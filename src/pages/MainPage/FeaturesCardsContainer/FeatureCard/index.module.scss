@@ -8,6 +8,7 @@
   box-sizing: border-box;
   padding: 0.328vw;
   @include flex-center;
+  border-radius: 0.5vw;
 }
 
 .featureCard {
@@ -18,7 +19,7 @@
   position: relative;
   padding: 2.5vw;
   box-sizing: border-box;
-
+  overflow: hidden;
 }
 
 .featureImage {
@@ -31,8 +32,12 @@
 
 .title {
   font-weight: bold;
+  font-size: 1.8rem;
+  padding-bottom: 1vw;
 }
 
 .description {
   width: 17.125vw;
+  color: #000B268F;
+  padding-bottom: 2vw;
 }

@@ -1,0 +1,41 @@
+.closeButton {
+  width: 2vw;
+  height: 2vw;
+  background-color: transparent;
+  background-image: url('../../../../public/icons/close.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+strong {
+  font-size: 1.4rem;
+}
+
+.signUpModal {
+  background-color: white;
+  padding: 3vw;
+  border-radius: 1vw;
+  z-index: 11;
+
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+
+    input {
+      padding: 1.25vw 1vw;
+      border: 0.063vw solid #000B2629;
+      border-radius: 0.5vw;
+      outline-color: var(--primary-color);
+      width: 24vw;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}
